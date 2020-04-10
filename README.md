@@ -23,16 +23,16 @@ GIF画像かYouTube動画を用意したい
 あらかじめ `Controller.py` の `GamePad` クラスにRaspberry PiのGPIOを操作する処理を記述しておく
 
 ```shell script
-# IPアドレスの確認 wlan0のアドレスを参照する
+# IPアドレスの確認 wlan0 のアドレスを参照する
 ip a
 
 # インストール
 git clone https://github.com/OptimisticPessimist/RaspberryLivePad.git
 cd RaspberryLivePad
 pipenv install .
-pipenv shell
 
 # ラズパイ内にサーバを立ち上げる
+pipenv shell
 flask run --host=0.0.0.0
 ```
 

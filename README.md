@@ -30,10 +30,11 @@ ip a
 git clone https://github.com/OptimisticPessimist/RaspberryLivePad.git
 cd RaspberryLivePad
 pipenv install .
+export FLASK_APP=app.py
 
 # ラズパイ内にサーバを立ち上げる
 pipenv shell
-flask run --host=0.0.0.0
+flask run
 ```
 
 ### リモート側

@@ -10,6 +10,7 @@ mypy = "*"
 
 [packages]
 flask = "*"
+gpiozero = "*"
 
 [requires]
 python_version = "3.8"

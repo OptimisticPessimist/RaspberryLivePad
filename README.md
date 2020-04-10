@@ -20,7 +20,7 @@ GIF画像かYouTube動画を用意したい
 
 ## 使用方法
 ### Raspberry Pi側
-あらかじめ `Controller.py` の `GamePad` クラスにRaspberry PiのGPIOを操作する処理を記述しておく
+あらかじめ `src/controller.py` の `GamePad` クラスにRaspberry PiのGPIOを操作する処理を記述しておく
 
 ```shell script
 # IPアドレスの確認 wlan0 のアドレスを参照する

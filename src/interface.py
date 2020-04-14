@@ -13,19 +13,19 @@ class Interface(GamePad):
         controller.pyのGamePadクラスで定義した関数名をソートして返す
 
         Returns:
-            List[str]:
+            List[str]:　GamePadクラス内の関数のリスト
         """
         return sorted(self.function_names)
 
     @staticmethod
-    def print_docstring(function) -> str:
+    def print_docstring(function: str) -> str:
         """
-        関数のdocstringを呼び出す
+        GamePadクラス内の関数からdocstringを呼び出す
 
         Args:
-            function: docstringを呼び出したい関数
+            function(str): docstringを呼び出したい関数
 
         Returns:
             (str): 関数のdocstring
         """
-        return function.__doc__
+        return eval(f"GamePad.{function}.__doc__")

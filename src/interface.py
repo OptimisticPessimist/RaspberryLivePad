@@ -17,3 +17,15 @@ class Interface(GamePad):
         """
         return sorted(self.function_names)
 
+    @staticmethod
+    def print_docstring(function) -> str:
+        """
+        関数のdocstringを呼び出す
+
+        Args:
+            function: docstringを呼び出したい関数
+
+        Returns:
+            (str): 関数のdocstring
+        """
+        return function.__doc__

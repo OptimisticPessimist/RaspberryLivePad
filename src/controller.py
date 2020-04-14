@@ -15,9 +15,6 @@ class GamePad:
 
         Args:
             analog_input(float): ゲームパッドのアナログ入力値
-
-        Returns:
-            None
         """
         self.front_motor.forward(analog_input)
 
@@ -27,9 +24,6 @@ class GamePad:
 
         Args:
             analog_input(float): ゲームパッドのアナログ入力値
-
-        Returns:
-            None
         """
         self.front_motor.backward(-analog_input)
 
@@ -40,9 +34,6 @@ class GamePad:
 
         Args:
             stick_input(float):
-
-        Returns:
-            None
         """
         if stick_input > 0.02:
             self.right_motor.forward(stick_input)
@@ -58,9 +49,6 @@ class GamePad:
 
         Args:
             stick_input(float):
-
-        Returns:
-            None
         """
         if stick_input > 0.02:
             self.left_motor.forward(stick_input)

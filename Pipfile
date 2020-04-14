@@ -11,6 +11,8 @@ mypy = "*"
 [packages]
 flask = "*"
 gpiozero = "*"
+python-dotenv = "*"
+flask-httpauth = "*"
 
 [requires]
 python_version = "3.8"

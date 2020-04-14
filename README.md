@@ -33,6 +33,8 @@ cd RaspberryLivePad
 pipenv install .
 export FLASK_APP=app.py
 
+# .dev.envファイルを参考に.envファイルを設定する
+
 # ラズパイ内にサーバを立ち上げる
 pipenv shell
 flask run

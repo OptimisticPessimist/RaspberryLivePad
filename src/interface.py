@@ -16,3 +16,9 @@ class Interface(GamePad):
             List[str]:
         """
         return sorted(self.function_names)
+
+
+interface = Interface()
+print(interface.function_names)
+print()
+print(interface.sorted_function_names())

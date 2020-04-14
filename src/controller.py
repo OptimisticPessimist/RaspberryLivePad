@@ -8,7 +8,6 @@ class GamePad:
         self.front_motor = Motor(11, 12)
         self.right_motor = Motor(13, 15)
         self.left_motor = Motor(16, 18)
-        pass
 
     def fork_lift_up(self, analog_input: float) -> None:
         """

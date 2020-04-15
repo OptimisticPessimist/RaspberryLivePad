@@ -3,6 +3,7 @@ from flask import Flask, render_template
 from flask_httpauth import HTTPDigestAuth
 import settings
 
+DEBUG_MODE = True
 HOST_NAME = settings.HOST_NAME
 PORT = settings.PORT
 USER = settings.USER
@@ -29,4 +30,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(debug=False, host=HOST_NAME, port=PORT)
+    app.run(debug=DEBUG_MODE, host=HOST_NAME, port=PORT)
